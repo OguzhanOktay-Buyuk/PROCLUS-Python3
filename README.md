@@ -1,18 +1,14 @@
-# PROCLUS-Python3
-This repo consists of Proclus algorithm implementation in Python 3(format: .ipynb (Jupyter Notebook)). 
+# pyproclus
+A python implementation of PROCLUS: PROjected CLUStering algorithm.
 
+You will need [NumPy](http://www.numpy.org/) and [SciPy](http://www.scipy.org/) to run the program.
 
-# Reference
-Paper: Aggarwal, C. C., Procopiuc, C., Wolf, L. J., and Park, S. J. (1999) ‘Fast algorithms for projected clustering’, Proceeding SIGMOD '99 Proceedings of the 1999 ACM SIGMOD international conference on Management of data, Vol. 28, No. 2, pp. 61-72.
+For running the examples you will also need [Matplotlib](http://matplotlib.org/).
 
-Dataset: Husem, S. S and Gulcu, A. (2017) ‘Categorizing the Turkish web pages by data mining techniques’, IEEE 2017 International Conference on Computer Science and Engineering (UBMK), pp. 255-260
+Check out the paper [here](http://dl.acm.org/citation.cfm?id=304188).
 
-Python 2 version of PROCLUS: https://github.com/cmmp/pyproclus
+One of the evaluation measures is written in [Cython](http://cython.org/) for efficiency. The generated C code is already included in this distribution, along with a compiled 64-bit linux shared library. This is not required to run the algorithm, only for computing the [Adjusted Rand Index](http://en.wikipedia.org/wiki/Rand_index#Adjusted_Rand_index). To build the shared library simply type `make` on a Unix system.
 
+Reference:
 
-
-
-Collaborator Name | Github Address
---- | ---
-Ayla Gulcu  | [@aylagulcu](https://github.com/aylagulcu)
-Oguzhan Oktay Buyuk | [@oguzhanoktaybuyuk](https://github.com/OguzhanOktay-Buyuk)
+Charu C. Aggarwal, Joel L. Wolf, Philip S. Yu, Cecilia Procopiuc, and Jong Soo Park. 1999. Fast algorithms for projected clustering. In Proceedings of the 1999 ACM SIGMOD international conference on Management of data (SIGMOD '99). ACM, New York, NY, USA, 61-72. DOI=10.1145/304182.304188 
